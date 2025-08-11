@@ -11,13 +11,12 @@ def get_num_words(path):
         print("----------- Word Count ----------")
         print(f"Found {text_quantity} total words")
         
-        return contents, text_quantity
+        get_num_char(contents, text_quantity)
     
-def get_num_char():
+def get_num_char(content, count):
     char_count = {}
     char_list = []
 
-    content, count = get_num_words()
     content = content.lower()
     for i in content:
         if i in char_count:
